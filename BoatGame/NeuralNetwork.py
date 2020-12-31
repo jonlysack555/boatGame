@@ -28,10 +28,10 @@ server_object = HTTPServer(server_address=('', 80), RequestHandlerClass=CGIHTTPR
 # Start the web server
 server_object.serve_forever()
 
-@app.route("/BoatGame/boatGame.html")
+@app.route("/BoatGame/neuralnetwork.py")
 def my_webservice():
     return jsonify(result="the result")
-   
+
 class Vector:
     arr = []  #stores the vector
 
