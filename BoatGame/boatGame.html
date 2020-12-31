@@ -1,0 +1,227 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Boat Game</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="boatGame.css">
+    <link href='https://fonts.googleapis.com/css?family=Raleway:300' rel='stylesheet' type='text/css'>
+  </head>
+  <body>
+		<h1 id="title">Boat Game</h1>
+    <p id="roll">Roll:</p>
+    <button id="done">Done</button>
+    <ul id="hexGrid">
+      <li class="hex">
+        <div class="hexIn">
+          <div class="hexLink" id="hexOne">
+            <p id="hexOneOp" class="hexOp">0</p>
+            <button id="killOne" class="kill">Kill</button>
+            <p id="hexOneUse" class="hexUse">0</p>
+          </div>
+        </div>
+      </li>
+      <li class="hex">
+        <div class="hexIn">
+          <div class="hexLink" id="hexTwo">
+            <p id="hexTwoOp" class="hexOp">0</p>
+            <button id="killTwo" class="kill">Kill</button>
+            <p id="hexTwoUse" class="hexUse">0</p>
+      		</div>
+        </div>
+      </li>
+      <li class="hex">
+        <div class="hexIn">
+          <div class="hexLink" id="hexThree">
+            <p id="hexThreeOp" class="hexOp">0</p>
+            <button id="killThree" class="kill">Kill</button>
+            <p id="hexThreeUse" class="hexUse">0</p>
+          </div>
+        </div>
+      </li>
+      <li class="hex">
+        <div class="hexIn">
+          <div class="hexLink" id="hexFour">
+            <p id="hexFourOp" class="hexOp">14</p>
+            <button id="killFour" class="kill">Kill</button>
+            <p id="hexFourUse" class="hexUse">0</p>
+          </div>
+        </div>
+      </li>
+      <li class="hex">
+        <div class="hexIn">
+          <div class="hexLink" id="hexFive">
+            <p id="hexFiveOp" class="hexOp">0</p>
+            <button id="killFive" class="kill">Kill</button>
+            <p id="hexFiveUse" class="hexUse">0</p>
+          </div>
+        </div>
+      </li>
+      <li class="hex">
+        <div class="hexIn">
+          <div class="hexLink" id="hexSix">
+            <p id="hexSixOp" class="hexOp">0</p>
+            <button id="killSix" class="kill">Kill</button>
+            <p id="hexSixUse" class="hexUse">0</p>
+          </div>
+        </div>
+      </li>
+      <li class="hex">
+        <div class="hexIn">
+          <div class="hexLink" id="hexSeven">
+            <p id="hexSevenOp" class="hexOp">0</p>
+            <button id="killSeven" class="kill">Kill</button>
+            <p id="hexSevenUse" class="hexUse">0</p>
+          </div>
+        </div>
+      </li>
+      <li class="hex">
+        <div class="hexIn">
+          <div class="hexLink" id="hexEight">
+            <p id="hexEightOp" class="hexOp">0</p>
+            <button id="killEight" class="kill">Kill</button>
+            <p id="hexEightUse" class="hexUse">0</p>
+          </div>
+        </div>
+      </li>
+      <li class="hex">
+        <div class="hexIn">
+          <div class="hexLink" id="hexNine">
+            <p id="hexNineOp" class="hexOp">0</p>
+            <button id="killNine" class="kill">Kill</button>
+            <p id="hexNineUse" class="hexUse">0</p>
+          </div>
+        </div>
+      </li>
+      <li class="hex">
+        <div class="hexIn">
+          <div class="hexLink" id="hexTen">
+            <p id="hexTenOp" class="hexOp">0</p>
+            <button id="killTen" class="kill">Kill</button>
+            <p id="hexTenUse" class="hexUse">0</p>
+          </div>
+        </div>
+      </li>
+      <li class="hex">
+        <div class="hexIn">
+          <div class="hexLink" id="hexEleven">
+            <p id="hexElevenOp" class="hexOp">0</p>
+            <button id="killEleven" class="kill">Kill</button>
+            <p id="hexElevenUse" class="hexUse">0</p>
+          </div>
+        </div>
+      </li>
+      <li class="hex">
+        <div class="hexIn">
+          <div class="hexLink" id="hexTwelve">
+            <p id="hexTwelveOp" class="hexOp">0</p>
+            <button id="killTwelve" class="kill">Kill</button>
+            <p id="hexTwelveUse" class="hexUse">0</p>
+          </div>
+        </div>
+      </li>
+      <li class="hex">
+        <div class="hexIn">
+          <div class="hexLink" id="hexThirteen">
+            <p id="hexThirteenOp" class="hexOp">0</p>
+            <button id="killThirteen" class="kill">Kill</button>
+            <p id="hexThirteenUse" class="hexUse">0</p>
+          </div>
+        </div>
+      </li>
+      <li class="hex">
+        <div class="hexIn">
+          <div class="hexLink" id="hexFourteen">
+            <p id="hexFourteenOp" class="hexOp">0</p>
+            <button id="killFourteen" class="kill">Kill</button>
+            <p id="hexFourteenUse" class="hexUse">0</p>
+          </div>
+        </div>
+      </li>
+      <li class="hex">
+        <div class="hexIn">
+          <div class="hexLink" id="hexFifteen">
+            <p id="hexFifteenOp" class="hexOp">0</p>
+            <button id="killFifteen" class="kill">Kill</button>
+            <p id="hexFifteenUse" class="hexUse">0</p>
+          </div>
+        </div>
+      </li>
+      <li class="hex">
+        <div class="hexIn">
+          <div class="hexLink" id="hexSixteen">
+            <p id="hexSixteenOp" class="hexOp">0</p>
+            <button id="killSixteen" class="kill">Kill</button>
+            <p id="hexSixteenUse" class="hexUse">0</p>
+          </div>
+        </div>
+      </li>
+      <li class="hex">
+        <div class="hexIn">
+          <div class="hexLink" id="hexSeventeen">
+            <p id="hexSeventeenOp" class="hexOp">0</p>
+            <button id="killSeventeen" class="kill">Kill</button>
+            <p id="hexSeventeenUse" class="hexUse">0</p>
+          </div>
+        </div>
+      </li>
+      <li class="hex">
+        <div class="hexIn">
+          <div class="hexLink" id="hexEighteen">
+            <p id="hexEighteenOp" class="hexOp">0</p>
+            <button id="killEighteen" class="kill">Kill</button>
+            <p id="hexEighteenUse" class="hexUse">0</p>
+          </div>
+        </div>
+      </li>
+      <li class="hex">
+        <div class="hexIn">
+          <div class="hexLink" id="hexNineteen">
+            <p id="hexNineteenOp" class="hexOp">0</p>
+            <button id="killNineteen" class="kill">Kill</button>
+            <p id="hexNineteenUse" class="hexUse">0</p>
+          </div>
+        </div>
+      </li>
+      <li class="hex">
+        <div class="hexIn">
+          <div class="hexLink" id="hexTwenty">
+            <p id="hexTwentyOp" class="hexOp">0</p>
+            <button id="killTwenty" class="kill">Kill</button>
+            <p id="hexTwentyUse" class="hexUse">14</p>
+          </div>
+        </div>
+      </li>
+      <li class="hex">
+        <div class="hexIn">
+          <div class="hexLink" id="hexTwentyone">
+            <p id="hexTwentyoneOp" class="hexOp">0</p>
+            <button id="killTwentyone" class="kill">Kill</button>
+            <p id="hexTwentyoneUse" class="hexUse">0</p>
+          </div>
+        </div>
+      </li>
+      <li class="hex">
+        <div class="hexIn">
+          <div class="hexLink" id="hexTwentytwo">
+            <p id="hexTwentytwoOp" class="hexOp">0</p>
+            <button id="killTwentytwo" class="kill">Kill</button>
+            <p id="hexTwentytwoUse" class="hexUse">0</p>
+          </div>
+        </div>
+      </li>
+      <li class="hex">
+        <div class="hexIn">
+          <div class="hexLink" id="hexTwentythree">
+            <p id="hexTwentythreeOp" class="hexOp">0</p>
+            <button id="killTwentythree" class="kill">Kill</button>
+            <p id="hexTwentythreeUse" class="hexUse">0</p>
+          </div>
+        </div>
+      </li>
+    </ul>
+		<script src="https://cdn.pubnub.com/sdk/javascript/pubnub.4.27.5.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+		<script src="boatGame.js"></script>
+  </body>
+</html>
