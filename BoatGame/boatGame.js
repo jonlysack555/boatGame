@@ -317,7 +317,7 @@ function setBoard(board) {
 
 function testing() {
 var xhr = new XMLHttpRequest();
-xhr.open("GET", "neuralnetwork.py", true);
+xhr.open("GET", "code.py", true);
 xhr.responseType = "JSON";
 xhr.onload = function(e) {
   var arrOfStrings = xhr.response;
