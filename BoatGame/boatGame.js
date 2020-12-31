@@ -322,9 +322,21 @@ xhr.responseType = "JSON";
 xhr.onload = function(e) {
   var arrOfStrings = xhr.response;
   console.log(arrOfStrings);
-  eval(arrOfStrings);
 }
 xhr.send();
+}
+
+function testingg() {
+  const { spawn } = require('child_process');
+const temperatures = []; // Store readings
+
+const sensor = spawn('python', ['NeuralNetwork.py']);
+sensor.stdout.on('data', function(data) {
+
+    // convert Buffer object to Float
+    temperatures.push(parseFloat(data));
+    console.log(temperatures);
+});
 }
 
 function pythonPlay(board) {
