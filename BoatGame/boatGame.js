@@ -322,6 +322,7 @@ xhr.responseType = "JSON";
 xhr.onload = function(e) {
   var arrOfStrings = xhr.response;
   console.log(arrOfStrings);
+  eval(arrOfStrings);
 }
 xhr.send();
 }
