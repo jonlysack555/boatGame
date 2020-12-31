@@ -315,6 +315,17 @@ function setBoard(board) {
   update();
 }
 
+function testing() {
+var xhr = new XMLHttpRequest();
+xhr.open("GET", "neuralnetwork.py", true);
+xhr.responseType = "JSON";
+xhr.onload = function(e) {
+  var arrOfStrings = JSON.parse(xhr.response);
+  console.log(arrOfStrings);
+}
+xhr.send();
+}
+
 function pythonPlay(board) {
   $.ajax({
     type: "POST",
