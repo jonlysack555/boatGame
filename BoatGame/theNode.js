@@ -11,3 +11,5 @@ sensor.stdout.on('data', function(data) {
     return "hello";
 });
 }
+
+console.log("hello world");
